@@ -1,0 +1,19 @@
+services:
+  reconciliation:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data:ro
+    environment:
+      EVENTS_FILE: ${EVENTS_FILE:-/app/data/trade-events-sample.jsonl}
+      CLEARING_FILE: ${CLEARING_FILE:-/app/data/clearing-positions-sample.csv}
+      BREAK_EXPLAINER: ${BREAK_EXPLAINER:-offline}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 15s

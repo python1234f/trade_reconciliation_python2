@@ -1,0 +1,8 @@
+{"event_id":"e-1001","trade_id":"T-1","version":1,"type":"NEW","account":"ACC-01","symbol":"AAPL","side":"BUY","quantity":100,"price":"189.25","venue":"XNAS","event_time":"2026-11-02T14:30:01.120Z"}
+{"event_id":"e-1002","trade_id":"T-2","version":1,"type":"NEW","account":"ACC-01","symbol":"MSFT","side":"SELL","quantity":50,"price":"412.10","venue":"ARCX","event_time":"2026-11-02T14:30:02.004Z"}
+{"INVALID_JSON_LINE"}
+{"event_id":"e-1004","trade_id":"T-1","version":3,"type":"CANCEL","account":"ACC-01","symbol":"AAPL","side":"BUY","quantity":120,"price":"189.20","venue":"XNAS","event_time":"2026-11-02T14:31:10.500Z"}
+{"event_id":"e-1003","trade_id":"T-1","version":2,"type":"AMEND","account":"ACC-01","symbol":"AAPL","side":"BUY","quantity":120,"price":"189.20","venue":"XNAS","event_time":"2026-11-02T14:30:45.870Z"}
+{"event_id":"e-1002","trade_id":"T-2","version":1,"type":"NEW","account":"ACC-01","symbol":"MSFT","side":"SELL","quantity":50,"price":"412.10","venue":"ARCX","event_time":"2026-11-02T14:30:02.004Z"}
+{"event_id":"e-1005","trade_id":"T-3","version":1,"type":"NEW","account":"ACC-02","symbol":"AAPL","side":"BUY","quantity":200,"price":"189.30","venue":"BATS","event_time":"2026-11-02T14:32:00.000Z"}
+{"event_id":"e-1006","trade_id":"T-3","version":2,"type":"AMEND","account":"ACC-02","symbol":"AAPL","side":"BUY","quantity":150,"price":"189.30","venue":"BATS","event_time":"2026-11-02T14:32:15.000Z"}
